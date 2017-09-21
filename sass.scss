@@ -1,0 +1,53 @@
+@import 'variables';
+@import 'global';
+
+body{
+    max-width: 1200px!important;
+    margin: 0, auto!important;
+}
+
+.nav-wrapper{
+    background-color: $primary-color;
+}
+
+.carousel{
+    height: 27.5em!important;
+}
+
+
+.info {
+    margin: 0 auto;
+    width:100%!important;
+    height: 23.2em!important;
+    background-color:$third-color;
+
+    .card{
+        
+    }
+}
+
+
+.parallax-container {
+    height: 30em;;
+    padding-top: 0px;
+
+  }
+
+  .info_2{
+  @extend .info;
+  }
+
+  .parallax{
+      margin: 0,auto;
+      padding-top:0px;
+
+  }
+
+  .info_3{
+      padding: 0,0;
+      img{
+          padding: 0;
+          max-width:100%;
+          max-height: 100%;
+      }
+  }

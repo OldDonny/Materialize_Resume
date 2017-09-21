@@ -1,0 +1,35 @@
+.margin-auto {
+  margin: 0 auto; }
+
+body {
+  max-width: 1200px !important;
+  margin: 0, auto !important; }
+
+.nav-wrapper {
+  background-color: #6BA099; }
+
+.carousel {
+  height: 27.5em !important; }
+
+.info, .info_2 {
+  margin: 0 auto;
+  width: 100% !important;
+  height: 23.2em !important;
+  background-color: #A4C6C1; }
+
+.parallax-container {
+  height: 30em;
+  padding-top: 0px; }
+
+.parallax {
+  margin: 0,auto;
+  padding-top: 0px; }
+
+.info_3 {
+  padding: 0,0; }
+  .info_3 img {
+    padding: 0;
+    max-width: 100%;
+    max-height: 100%; }
+
+/*# sourceMappingURL=styles.css.map */
