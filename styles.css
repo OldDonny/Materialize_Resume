@@ -1,35 +1,135 @@
 .margin-auto {
   margin: 0 auto; }
 
+* {
+  font-family: 'Baloo Bhaijaan', sans-serif; }
+
 body {
   max-width: 1200px !important;
   margin: 0, auto !important; }
 
 .nav-wrapper {
-  background-color: #6BA099; }
+  background-color: #96E6B3; }
+  .nav-wrapper .brand-logo img {
+    height: 2em; }
 
 .carousel {
   height: 27.5em !important; }
+  .carousel .carousel-item {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%; }
 
-.info, .info_2 {
+.img1 {
+  background-image: url("images/dead5.png"); }
+
+.img2 {
+  background-image: url("images/bow.jpg"); }
+
+.img3 {
+  background-image: url("images/gdead.jpg"); }
+
+.img4 {
+  background-image: url("images/bertha.jpg"); }
+
+#carousel-item1 {
+  background-image: url("images/dead5.png");
+  max-width: 100%;
+  background-size: 100%; }
+
+.info {
   margin: 0 auto;
   width: 100% !important;
-  height: 23.2em !important;
-  background-color: #A4C6C1; }
+  height: 23.5em;
+  background-color: #CCFCCB; }
+
+.card1 {
+  margin-top: 4em; }
+
+.card2 {
+  padding: 1.5em;
+  width: 100%;
+  background-color: #FFFCF9;
+  margin-top: 5em; }
 
 .parallax-container {
   height: 30em;
   padding-top: 0px; }
 
-.parallax {
-  margin: 0,auto;
-  padding-top: 0px; }
+.info_2 {
+  margin: 0 auto;
+  width: 100% !important;
+  height: 36em;
+  background-color: #F1FFFA; }
 
-.info_3 {
-  padding: 0,0; }
-  .info_3 img {
-    padding: 0;
-    max-width: 100%;
-    max-height: 100%; }
+.col.s12.m6.l4 {
+  height: 20em;
+  width: 33.33%; }
+
+.img_row {
+  padding: 0;
+  margin: 0; }
+
+#img-1 {
+  background-image: url("images/dead2.jpg");
+  background-size: cover;
+  background-position: center; }
+
+#img-2 {
+  background-image: url("images/jerry2.jpg");
+  background-size: cover;
+  background-position: center; }
+
+#img-3 {
+  background-image: url("images/dead8.jpg");
+  background-size: cover;
+  background-position: center; }
+
+#img-4 {
+  background-image: url("images/bob1.png");
+  background-size: cover;
+  background-position: center; }
+
+#img-5 {
+  background-image: url("images/dead11.jpg");
+  background-size: cover;
+  background-position: center; }
+
+#img-6 {
+  background-image: url("images/pig.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.contact_info {
+  margin-top: 2em;
+  font-weight: lighter;
+  text-align: justify; }
+
+.contact {
+  margin-top: 2em !important;
+  height: 27em;
+  text-align: center; }
+  .contact textarea {
+    margin-bottom: 0.5em !important; }
+  .contact #msg {
+    height: 12em; }
+
+.border {
+  border-bottom: 3px solid pink; }
+
+.footer {
+  height: 6em !important;
+  text-align: center; }
+  .footer li {
+    display: inline-block; }
+  .footer p {
+    transform: translateY(-50%);
+    padding-right: 1em;
+    padding-left: 1em; }
+  .footer img {
+    margin: 0, auto;
+    height: 2em;
+    width: auto; }
 
 /*# sourceMappingURL=styles.css.map */

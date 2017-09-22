@@ -1,53 +1,161 @@
 @import 'variables';
 @import 'global';
+@import 'mixins';
+
+*{
+  font-family: 'Baloo Bhaijaan', sans-serif;
+}
 
 body{
     max-width: 1200px!important;
     margin: 0, auto!important;
 }
 
+
+
+
 .nav-wrapper{
-    background-color: $primary-color;
+    background-color: $third-color;
+    .brand-logo img{
+        height: 2em;
+        
+    }
 }
 
 .carousel{
     height: 27.5em!important;
+
+    .carousel-item {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        width: 80%;
+
+        
+    }
+}
+.img1{
+    background-image: url('images/dead5.png');
+}
+.img2{
+    background-image: url('images/bow.jpg');
+}
+.img3{
+    background-image: url('images/gdead.jpg');
+}
+.img4{
+    background-image: url('images/bertha.jpg');
+}
+
+
+#carousel-item1{
+    background-image: url("images/dead5.png");
+    max-width:100%;
+    background-size:100%;
+
 }
 
 
 .info {
-    margin: 0 auto;
-    width:100%!important;
-    height: 23.2em!important;
-    background-color:$third-color;
+  @include info_box(23.5em,$secondary-color);    
 
-    .card{
-        
-    }
+
 }
+.card1{
+    margin-top: 4em;
+}
+
+.card2{
+    padding:1.5em;
+    width:100%;
+    background-color:#FFFCF9;
+    margin-top: 5em;
+}
+
+
 
 
 .parallax-container {
     height: 30em;;
     padding-top: 0px;
-
   }
 
   .info_2{
-  @extend .info;
+    @include info_box(36em,$primary-color);
   }
 
-  .parallax{
-      margin: 0,auto;
-      padding-top:0px;
+.col.s12.m6.l4{
+  height: 20em;
+  width: 33.33%;
+}
+  
+.img_row{
+    padding: 0;
+    margin: 0;
+}
 
-  }
+    #img-1{
+        @include img_box("images/dead2.jpg");
+        
+     }
+     #img-2{
+         @include img_box("images/jerry2.jpg");
+     }
+     #img-3{
+         @include img_box("images/dead8.jpg");
+     }
+    #img-4{
+        @include img_box("images/bob1.png");
+    }
+    #img-5{
+        @include img_box("images/dead11.jpg");
+    }
+    #img-6{
+        @include img_box("images/pig.jpg");
+    }
 
-  .info_3{
-      padding: 0,0;
-      img{
-          padding: 0;
-          max-width:100%;
-          max-height: 100%;
-      }
-  }
+.contact_info{
+    margin-top: 2em;
+    font-weight: lighter;
+    text-align: justify;
+    p{
+        
+    }
+}
+
+.contact{
+    margin-top: 2em!important;
+    height: 27em;
+    text-align: center;
+    textarea{
+        margin-bottom: .5em!important;
+       
+    }
+    #msg{
+        height: 12em;
+    }
+}
+.border{
+    border-bottom: 3px solid pink;
+}
+
+.footer{
+    height: 6em!important;
+    text-align: center;
+    li{
+        display: inline-block;
+    }
+    p{
+        transform: translateY(-50%);
+        padding-right: 1em;
+        padding-left:1em;
+    }
+    
+    
+
+    img{
+        margin: 0, auto;
+        height: 2em;
+        width: auto;
+    }
+}
