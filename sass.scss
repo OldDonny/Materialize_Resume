@@ -61,19 +61,14 @@ body{
 
 
 }
-.card1{
-    margin-top: 4em;
-}
+
+  
 
 .card2{
-    padding:1.5em;
-    width:100%;
     background-color:#FFFCF9;
-    margin-top: 5em;
+    font-size: 13px!important;
+    padding: 1em;
 }
-
-
-
 
 .parallax-container {
     height: 30em;;
@@ -82,16 +77,16 @@ body{
 
   .info_2{
     @include info_box(36em,$primary-color);
+    margin: 0;
   }
 
 .col.s12.m6.l4{
   height: 20em;
-  width: 33.33%;
 }
   
 .img_row{
     padding: 0;
-    margin: 0;
+    margin: 0,;
 }
 
     #img-1{
@@ -157,5 +152,11 @@ body{
         margin: 0, auto;
         height: 2em;
         width: auto;
+    }
+}
+
+@media all and (max-width: 625px){
+    .info_2{
+        height: 700px !important;
     }
 }
